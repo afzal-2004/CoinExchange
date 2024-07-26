@@ -1,0 +1,8 @@
+.card {
+    @apply bg-white sm:p-2 p-[2px] flex justify-center items-center m-4 h-[170px] w-[150px] sm:w-[200px] sm:h-[220px] rounded-lg border border-slate-200 text-center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}

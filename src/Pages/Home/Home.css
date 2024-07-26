@@ -1,0 +1,12 @@
+ .aboutDesign {
+     @apply sm:w-[60%] min-h-[70vh] bg-white p-5 flex flex-col justify-center m-3 items-center md:rounded-tr-[150px] md:rounded-br-[150px];
+
+ }
+
+
+
+ .ourVision {
+     @apply sm:w-[60%] min-h-[70vh] bg-white p-5 flex flex-col justify-center m-3 items-center mt-[30px] md:rounded-tl-[150px] md:rounded-bl-[150px];
+
+
+ }

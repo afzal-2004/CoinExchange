@@ -1,0 +1,32 @@
+.NavBar {
+    @apply flex items-center justify-between p-3 bg-white rounded-sm pr-4;
+    box-shadow: 0px 2px 2px gray;
+}
+
+@keyframes animateloader {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    @apply border-2 border-gray-200 h-[100px] w-[100px] rounded-full;
+    border-left-color: black;
+    animation: animateloader 0.7s linear infinite;
+}
+
+.error {
+    @apply bg-red-100 w-[94vw] h-[50px] flex justify-center items-center m-[3vw] rounded-md p-2 opacity-75 text-gray-500 gap-2;
+}
+
+.detailCoindata {
+    @apply flex justify-between;
+}
+
+.detailsDataSection {
+    @apply sm:text-[25px] gap-3 uppercase sm:w-[50%] text-[18px] p-2;
+}
