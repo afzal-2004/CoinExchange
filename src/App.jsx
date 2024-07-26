@@ -9,9 +9,6 @@ import { Coin } from "./Pages/Coins/Coin";
 import { CoinDetail } from "./Components/Coindetails/CoinDetail";
 import { Error } from "./Components/Error/Error";
 function App() {
-  // console.log(import.meta.env.VITE_API_KEY);
-  //   let key=import.meta.env.VITE_API_KEY;
-
   return (
     <>
       <BrowserRouter>
@@ -29,5 +26,4 @@ function App() {
   );
 }
 
-// console.log(API_KEY);
 export default App;

@@ -15,7 +15,7 @@ export const Exchange = () => {
     method: "GET",
     headers: {
       accept: "application/json",
-      // "x-cg-demo-api-key": "CG-LqLBqm744nrdaDwAqTgcTWCn",
+
       "x-cg-demo-api-key": import.meta.env.MODE.VITE_API_KEY,
     },
   };
