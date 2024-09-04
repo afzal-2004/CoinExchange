@@ -1,5 +1,5 @@
 .Card {
-    @apply bg-white sm:p-2 p-[2px] flex justify-center items-center m-4 h-[200px] w-[150px] sm:w-[250px] sm:h-[270px] rounded-lg sm:text-nowrap border border-slate-200;
+    @apply bg-white sm:p-2 p-[2px] flex justify-center items-center m-4 h-[200px] w-[120px] sm:w-[250px] sm:h-[270px] rounded-lg sm:text-nowrap border border-slate-200;
     transition: transform 0.3s ease-in-out;
 }
 

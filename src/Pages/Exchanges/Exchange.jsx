@@ -53,9 +53,12 @@ export const Exchange = () => {
               >
                 <img src={Coin.image} alt="" />
                 <p>{Coin.trust_score_rank}</p>
-                <div className=" text-center">{Coin.name}</div>
+                <div className=" text-center text-sm sm:text-base">
+                  {Coin.name}
+                </div>
                 {/* <p>{Coin.year_established}</p> */}
-                <p>{Coin.country}</p>
+                <p className="text-sm sm:text-base">{Coin.country} </p>
+                <p className="text-[10px] text-blue-500">view more ...</p>
               </a>
             </div>
           ))}

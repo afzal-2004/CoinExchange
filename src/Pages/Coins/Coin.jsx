@@ -103,9 +103,13 @@ export const Coin = () => {
                       alt=""
                       className=" w-[100px] h-[100px] object-fill "
                     />
-                    <div className=" text-center">{Coin.name}</div>
-                    <p className="text-center">{Coin.symbol}</p>
-                    <p>
+                    <div className=" text-center text-sm sm:text-base">
+                      {Coin.name}
+                    </div>
+                    <p className="text-center text-sm sm:text-base">
+                      {Coin.symbol}
+                    </p>
+                    <p className="text-sm sm:text-base">
                       {coinValue === "inr"
                         ? "₹"
                         : coinValue === "usd"
@@ -115,6 +119,9 @@ export const Coin = () => {
                         : "NAN"}
 
                       {Coin.current_price}
+                    </p>
+                    <p className="text-[10px] text-blue-500">
+                      view details ...
                     </p>
                   </div>
                 </div>
