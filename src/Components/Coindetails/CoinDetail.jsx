@@ -14,6 +14,9 @@ export const CoinDetail = () => {
   const [currency, setcurrency] = useState("inr");
   const [loading, setloading] = useState(true);
   const [err, seterr] = useState(false);
+  const Update = new Date(data.last_updated);
+  const Current_Date = Update.toLocaleDateString();
+  const currentUpdate = Update.toLocaleTimeString();
   let currencySymbol =
     currency === "inr"
       ? "₹"
@@ -37,6 +40,7 @@ export const CoinDetail = () => {
     axios
       .request(`https://api.coingecko.com/api/v3/coins/${params.id}`, options)
       .then(function (response) {
+        console.log(response.data);
         setdata(response.data);
         setloading(false);
       })
@@ -89,7 +93,7 @@ export const CoinDetail = () => {
               </div>
 
               <p className=" text-center text-slate-400  sm:mt-[2vh] mt-[5vh]">
-                Last Update {data.last_updated}
+                Last Update {Current_Date} {currentUpdate}
               </p>
 
               <div className=" text-center w-full flex justify-center">
